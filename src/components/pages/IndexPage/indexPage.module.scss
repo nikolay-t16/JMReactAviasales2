@@ -1,0 +1,48 @@
+@import '../../../assets/scss/vars';
+
+.root {
+  margin: 10px auto 10px auto;
+  min-width: 320px;
+  max-width: 754px;
+  min-height: 700px;
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 620px) {
+    flex-direction: column;
+  }
+}
+
+.main {
+  flex-grow: 1;
+}
+
+.tickets{
+  max-width: 502px;
+}
+
+.filter {
+  align-self: flex-start;
+  margin-right: 20px;
+  width: 232px;
+  height: 252px;
+  @media (max-width: 620px) {
+    position: static;
+    align-items: center;
+    width: 100%;
+    height: auto;
+  }
+}
+
+.sort {
+  @extend %block-box-shadow;
+  margin-bottom: 20px;
+  display: flex;
+  height: 40px;
+  width: 100%;
+  justify-content: space-evenly;
+  overflow: hidden;
+}
+
+.sortedItem {
+  width: 50%;
+}

@@ -1,0 +1,1 @@
+export const receiveErrorSearchId = 'не удалось подключиться к базе';

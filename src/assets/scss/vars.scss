@@ -1,0 +1,21 @@
+%block-box-shadow {
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+%outline-elem {
+  outline: 3px solid #9abbce;
+  outline-offset: -3px;
+}
+
+$color-blue: #2196f3;
+
+$color-background-input-container-input: #f1fcff;
+
+$color-app-background: #F3F7FA;
+
+$color-block-background: white;
+
+$color-border-checkbox-color: #9abbce;
+
+$color-outline-focus-elem: #9abbce;

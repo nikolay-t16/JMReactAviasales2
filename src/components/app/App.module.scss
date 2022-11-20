@@ -1,0 +1,21 @@
+@import '../../assets/scss/vars';
+
+.root {
+  padding-top: 35px;
+  box-sizing: border-box;
+  max-width: 100%;
+  min-height: 100vh;
+  background-color: $color-app-background;
+  font-family: 'Open Sans', sans-serif;
+  @media (min-width: 620px) {
+    max-height: 100vh;
+    overflow: hidden;
+  }
+}
+
+.logo {
+  display: block;
+  margin: 0 auto 35px auto;
+  width: 70px;
+  height: 70px;
+}

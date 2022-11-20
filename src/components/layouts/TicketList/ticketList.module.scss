@@ -1,0 +1,74 @@
+@import '../../../assets/scss/vars';
+
+.root {
+  padding-bottom: 50px;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 1;
+  box-sizing: border-box;
+  width: auto;
+  height: 80vh;
+  overflow: scroll;
+  scrollbar-color: rgba(33, 150, 243, 0.5) $color-app-background;
+  scrollbar-width: thin;
+  &::-webkit-scrollbar {
+    width: 10px;
+    background-color: $color-app-background;
+    border: none;
+  }
+  &::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background-color: rgba(33, 150, 243, 0.5);
+    opacity: 0.4;
+  }
+  @media (max-width: 620px) {
+    height: auto;
+    overflow: auto;
+    flex-shrink: 0;
+    max-width: 620px;
+    padding-right: 0;
+  }
+}
+
+.item {
+ list-style-type: none;
+  margin-bottom: 22px;
+}
+
+.showMore {
+  width: 100%;
+  height: 50px;
+  color: white;
+  background-color: $color-blue;
+  border-radius: 5px;
+  border: 15px solid $color-blue;
+  &:focus {
+    @extend %outline-elem;
+  }
+}
+
+.list {
+  margin-left: 0;
+  padding-left: 0;
+}
+
+.massage {
+  @extend %block-box-shadow;
+  width: 465px;
+  margin-top: 39px;
+  height: 184px;
+  background-color: $color-block-background;
+  padding: 20px;
+  font-size: 24px;
+  text-align: center;
+  vertical-align: center;
+  @media (max-width: 465px) {
+    width: 100%;
+  }
+}
+
+.indicatorHidden {
+   visibility: collapse;
+   text-transform: uppercase;
+}

@@ -1,0 +1,31 @@
+@import '../../../assets/scss/vars';
+
+.root {
+  @extend %block-box-shadow;
+  height: 184px;
+  background-color: $color-block-background;
+  padding: 20px;
+  &:focus-visible {
+    @extend %outline-elem;
+  }
+}
+
+.header {
+  height: 35px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.price {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 24px;
+  color: $color-blue;
+}
+
+.body {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+}
